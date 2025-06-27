@@ -1,0 +1,102 @@
+{
+  "prompt": "Hello",
+  "timestamp": 1751022002.4942393,
+  "results": {
+    "base": {
+      "success": true,
+      "text": "Hello! What an exciting moment this is – like the first rays of dawn breaking through the night, or the fluttering of wings as a butterfly takes its first flight. How do you feel today? Ready to embrace whatever comes your way with open arms and boundless curiosity? Whether it's a new adventure, a deep dive into knowledge, or simply finding joy in the simplest moments, I'm here to accompany you on this journey. Let's make each day as rich and vibrant as a painting just beginning to be colored, or as profound as a melody that echoes through time. What would you like to explore first?",
+      "model_type": "base",
+      "response_time": 52.71208739280701,
+      "tokens": {
+        "prompt_tokens": 35,
+        "completion_tokens": 124,
+        "total_tokens": 159
+      }
+    },
+    "instruct": {
+      "success": true,
+      "text": "Hello! How can I assist you today? Whether it's answering questions, providing information on various topics, or helping with any task, feel free to ask and I'll do my best to help you. Please let me know how I can assist you further.",
+      "model_type": "instruct",
+      "response_time": 26.097204446792603,
+      "tokens": {
+        "prompt_tokens": 39,
+        "completion_tokens": 52,
+        "total_tokens": 91
+      }
+    },
+    "fine_tuned": {
+      "success": true,
+      "text": "Hello! How can I assist you today? Whether you need information on a specific topic, want help with a task, or just have a question, feel free to ask me anything.",
+      "model_type": "fine_tuned",
+      "response_time": 20.29640769958496,
+      "tokens": {
+        "prompt_tokens": 43,
+        "completion_tokens": 37,
+        "total_tokens": 80
+      }
+    }
+  },
+  "model_characteristics": {
+    "base": {
+      "description": "Pre-trained models without specific instruction tuning",
+      "strengths": [
+        "Creative text generation",
+        "Diverse outputs",
+        "Good general knowledge"
+      ],
+      "weaknesses": [
+        "May not follow instructions precisely",
+        "Inconsistent formatting"
+      ],
+      "best_for": [
+        "Creative writing",
+        "Text completion",
+        "Exploratory generation"
+      ],
+      "example_models": [
+        "Qwen2.5-3B-Base",
+        "Llama-3-8B-Base"
+      ]
+    },
+    "instruct": {
+      "description": "Models fine-tuned to follow instructions and provide helpful responses",
+      "strengths": [
+        "Better instruction following",
+        "Consistent formatting",
+        "Safer outputs"
+      ],
+      "weaknesses": [
+        "May be less creative",
+        "More constrained responses"
+      ],
+      "best_for": [
+        "Question answering",
+        "Task completion",
+        "Structured outputs"
+      ],
+      "example_models": [
+        "Qwen2.5-3B-Instruct",
+        "Llama-3-8B-Instruct"
+      ]
+    },
+    "fine_tuned": {
+      "description": "Models specialized for specific domains or tasks",
+      "strengths": [
+        "High performance on target tasks",
+        "Domain expertise"
+      ],
+      "weaknesses": [
+        "Limited to specific use cases",
+        "May perform poorly outside domain"
+      ],
+      "best_for": [
+        "Specialized applications",
+        "Domain-specific tasks"
+      ],
+      "example_models": [
+        "Code-Qwen2.5-3B",
+        "Medical-Llama-7B"
+      ]
+    }
+  }
+}

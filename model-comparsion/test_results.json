@@ -1,0 +1,88 @@
+{
+  "prompt": "What is AI?",
+  "timestamp": 1751021884.740586,
+  "results": {
+    "base": {
+      "success": true,
+      "text": "AI, or Artificial Intelligence, is the simulation of human intelligence processes by machines, particularly to imitate, extend, and automate tasks that typically require human cognitive functions such as learning, reasoning, problem-solving, knowledge acquisition, and self-correction. Imagine a world where computers can not only process data but also understand it in ways that mimic how humans think and learn. AI enables systems to recognize patterns, make decisions, adapt based on experiences, and even generate creative content like art or music. It's the cutting edge of technology, shaping our digital landscape and transforming various industries from healthcare to transportation, education to entertainment.\n\nAt its core, AI is about creating programs that can interact with the world in ways we consider intelligent. This could involve designing algorithms that recognize speech patterns, predicting weather forecasts using complex models, or even playing strategy games at a level beyond human capability. The key difference between humans and machines in this context isn't just in raw computing power (though it certainly plays a role), but in their ability to process vast amounts of data quickly and derive insights from it.\n\nAI is not always straightforward; there are ethical considerations, privacy issues, and concerns about job displacement that come with its implementation. Nevertheless, as AI continues to evolve, we're witnessing both profound advancements and fundamental shifts in how humans perceive the relationship between technology and intelligence. It's a rapidly developing field that touches every aspect of our lives, promising not only technological marvels but also new challenges and opportunities for humanity.",
+      "model_type": "base",
+      "response_time": 117.12118458747864,
+      "tokens": {
+        "prompt_tokens": 38,
+        "completion_tokens": 297,
+        "total_tokens": 335
+      }
+    },
+    "instruct": {
+      "success": false,
+      "error": "Error: HTTPConnectionPool(host='localhost', port=1234): Read timed out. (read timeout=120)"
+    },
+    "fine_tuned": {
+      "success": false,
+      "error": "Error: HTTPConnectionPool(host='localhost', port=1234): Read timed out. (read timeout=120)"
+    }
+  },
+  "model_characteristics": {
+    "base": {
+      "description": "Pre-trained models without specific instruction tuning",
+      "strengths": [
+        "Creative text generation",
+        "Diverse outputs",
+        "Good general knowledge"
+      ],
+      "weaknesses": [
+        "May not follow instructions precisely",
+        "Inconsistent formatting"
+      ],
+      "best_for": [
+        "Creative writing",
+        "Text completion",
+        "Exploratory generation"
+      ],
+      "example_models": [
+        "Qwen2.5-3B-Base",
+        "Llama-3-8B-Base"
+      ]
+    },
+    "instruct": {
+      "description": "Models fine-tuned to follow instructions and provide helpful responses",
+      "strengths": [
+        "Better instruction following",
+        "Consistent formatting",
+        "Safer outputs"
+      ],
+      "weaknesses": [
+        "May be less creative",
+        "More constrained responses"
+      ],
+      "best_for": [
+        "Question answering",
+        "Task completion",
+        "Structured outputs"
+      ],
+      "example_models": [
+        "Qwen2.5-3B-Instruct",
+        "Llama-3-8B-Instruct"
+      ]
+    },
+    "fine_tuned": {
+      "description": "Models specialized for specific domains or tasks",
+      "strengths": [
+        "High performance on target tasks",
+        "Domain expertise"
+      ],
+      "weaknesses": [
+        "Limited to specific use cases",
+        "May perform poorly outside domain"
+      ],
+      "best_for": [
+        "Specialized applications",
+        "Domain-specific tasks"
+      ],
+      "example_models": [
+        "Code-Qwen2.5-3B",
+        "Medical-Llama-7B"
+      ]
+    }
+  }
+}
