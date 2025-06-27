@@ -1,0 +1,48 @@
+{
+  "name": "multimodal-qa-agent",
+  "version": "1.0.0",
+  "description": "A sophisticated web application that combines computer vision and natural language processing to answer questions about images",
+  "main": "index.js",
+  "scripts": {
+    "setup": "node setup.js",
+    "dev": "concurrently \"npm run dev:backend\" \"npm run dev:frontend\"",
+    "dev:backend": "cd backend && npm run dev",
+    "dev:frontend": "cd frontend && npm run dev",
+    "build": "cd frontend && npm run build",
+    "start": "cd backend && npm start",
+    "install:all": "npm install && cd backend && npm install && cd ../frontend && npm install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "health": "curl http://localhost:5001/api/health",
+    "status": "curl http://localhost:5001/api/status",
+    "clean": "rm -rf backend/node_modules frontend/node_modules node_modules backend/temp",
+    "reset": "npm run clean && npm run install:all"
+  },
+  "keywords": [
+    "multimodal",
+    "ai",
+    "computer-vision",
+    "nlp",
+    "react",
+    "nodejs",
+    "gpt-4o",
+    "gemini",
+    "claude"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "engines": {
+    "node": ">=18.0.0",
+    "npm": ">=8.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/yourusername/multimodal-qa-agent.git"
+  },
+  "bugs": {
+    "url": "https://github.com/yourusername/multimodal-qa-agent/issues"
+  },
+  "homepage": "https://github.com/yourusername/multimodal-qa-agent#readme"
+}
